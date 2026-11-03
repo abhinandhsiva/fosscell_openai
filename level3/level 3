@@ -1,0 +1,36 @@
+## Overview of the Bellman-Ford Algorithm
+
+This C program implements the Bellman-Ford Algorithm, which is used to find the shortest distance from a source vertex to all other vertices in a weighted graph. It can handle both positive and negative edge weights and detect negative weight cycles.
+
+The program creates a graph with 5 vertices and 8 edges. Each edge contains a source vertex, destination vertex and weight.
+
+### Explanation of Functions
+
+1. `createGraph()` – Creates a graph and allocates memory for its vertices and edges using `malloc()`.
+2. `BellmanFord()` – Calculates the shortest distances from the source vertex. It initializes distances, updates them by checking all edges repeatedly and detects negative weight cycles.
+3. `debugGraph()` – Displays the total number of vertices and edges in the graph.
+4. `printEdge()` – Displays the source, destination and weight of an edge.
+5. `main()` – Creates the graph, assigns edge values, calls the Bellman-Ford function and releases allocated memory using `free()`.
+
+### Working of the Algorithm
+
+The algorithm follows three main steps:
+
+- Initialization: Sets the source distance to 0 and all other distances to infinity.
+- Relaxation: Updates the shortest distances by checking all edges V-1 times.
+- Cycle Detection: Checks whether a shorter distance is still possible to identify a negative weight cycle.
+
+### Output
+
+```
+Vertex Distance from Source
+0       0
+1      -1
+2       2
+3      -2
+4       1
+```
+
+### Conclusion
+
+The main objective of this program is to find the shortest paths in a weighted graph, detect negative weight cycles and manage memory efficiently. It demonstrates the use of structures, functions, pointers and dynamic memory allocation in C.
