@@ -1,0 +1,15 @@
+### Brief Explanation
+
+This C program sorts 10 integers in ascending order using the Quick Sort algorithm.
+
+- `SwapElements()` – Swaps two numbers using pointers.
+- `partition_array()` – Selects a pivot and arranges smaller and larger elements.
+- `QuickSort()` – Sorts the array by dividing it into smaller parts.
+- `printArray()` – Displays the array elements.
+- `main()` – Allocates memory, assigns values, calls the sorting function and displays the result.
+
+### Main Purpose
+
+The program demonstrates Quick Sort, functions, pointers and dynamic memory allocation.
+
+Debugging task: Correct inconsistent naming, improve indentation, check memory allocation and add `free()` to prevent memory leaks.
